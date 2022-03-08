@@ -11,6 +11,8 @@ import java.util.concurrent.LinkedBlockingQueue
  * Created by bytebeats on 2022/3/8 : 16:51
  * E-mail: happychinapc@gmail.com
  * Quote: Peasant. Educated. Worker
+ *
+ * To preload Chrome Service and recycle WebView.
  */
 
 sealed interface WebViewPool {
