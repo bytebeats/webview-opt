@@ -10,11 +10,13 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import me.bytebeats.android.webview.opt.WebViewPool
 import me.bytebeats.android.webview.opt.app.ui.theme.WebviewoptTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        WebViewPool.POOL.prepare(this)
         setContent {
             WebviewoptTheme {
                 // A surface container using the 'background' color from the theme
